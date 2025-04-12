@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    background-color: brown;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.outerbdy {
+    border: 5px dashed gold;
+    padding: 20px;
+    box-shadow: 
+        0px 8px 15px rgba(255, 215, 0, 0.5),  /* Outer shadow */
+        inset 0px 5px 10px rgba(0, 0, 0, 0.4); /* Inner golden glow */
+    border-radius: 15px;
+}
+
+h1 {
+    position: absolute;
+    top: 45px;
+    color: gold;
+    font-family: cursive;
+}
+
+.container {
+    border: 2px solid black;
+    height: 40px;
+    width: 500px;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;  /* Ensures no overflow between input and button */
+    padding: 0;
+    box-shadow: 0 0 10px;
+    margin-bottom: 10px;
+}
+
+input {
+    height: 100%;
+    width: 80%;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    font-size: 20px;
+    padding-left: 10px; /* Moves text inside input 10px to the right */
+}
+
+#add {
+    height: 100%;
+    width: 20%;
+    border: 1px solid white;
+    border-radius: 0 10px 10px 0;
+    color: green;
+    padding: 0;  /* Remove padding */
+    margin: 0;   /* Remove margin */
+}
+
+#add:hover {
+    background-color: green;
+    color: white;
+}
+
+.job {
+    display: flex;
+    width: 500px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    font-size: 20px;
+    padding: 0;
+    box-shadow: 0 0 10px;
+    margin-bottom: 4px;
+}
+
+.job p {
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+.check {
+    margin-left: auto;
+    height: 100%;
+    width: 98px;
+    border: none;
+    color: orange;
+    padding: 0;  /* Remove padding */
+    margin: 0;   /* Remove margin */
+    border-radius: 10px 0px 0px 10px;
+    border: 2px solid white;
+}
+
+.trash {
+    height: 100%;
+    width: 98px;
+    border: none;
+    color: red;
+    padding: 0;  /* Remove padding */
+    margin: 0;   /* Remove margin */
+    border-radius: 0 10px 10px 0;
+    border: 2px solid white;
+}
+
+.check:hover {
+    background-color: orange;
+    color: white;
+}
+
+.trash:hover {
+    background-color: red;
+    color: white;
+}
